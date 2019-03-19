@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Max Masnick" name="author">
+
+  <title>Max Masnick, PhD
+		- The state of CAPTCHAs</title>
+
+  <link href="../../../assets/css/style.css%3F0.css" rel="stylesheet">
+  <link href="../../../assets/css/highlight.css%3F0.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../custom.css%3F0.css">
+
+	<link rel="shortcut icon" href="https://micro.blog/max/favicon.png" type="image/x-icon" />
+
+    <link rel="me" href="https://micro.blog/max" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+	<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+	<link rel="micropub" href="https://micro.blog/micropub" />
+	<link rel="microsub" href="https://micro.blog/microsub" />
+	<link rel="webmention" href="https://micro.blog/webmention" />
+	<link rel="subscribe" href="https://micro.blog/users/follow" />
+    
+    
+</head>
+
+<body>
+  <nav class="main-nav">
+  
+  <a class="normal" href="../../../index.html"> <span class="arrow">←</span> Home</a>
+  
+
+	
+		
+			<a href="../../../archive/index.html">Archive</a>
+		
+	
+		
+			<a href="../../../about/index.html">About</a>
+		
+	
+		
+			<a href="../../../subscribe/index.html">Subscribe</a>
+		
+	
+		
+			<a href="../../../redirect/index.html">maxmasnick.com →</a>
+		
+	
+
+  <a class="cta" href="https://micro.blog/max" rel="me">Also on Micro.blog</a>
+</nav>
+
+
+
+  <section id="wrapper" >
+	
+<article class="h-entry post">
+  <header>
+	
+    <h1 class="p-name">The state of CAPTCHAs</h1>
+    
+    <h2 class="headline">
+      <time class="dt-published" datetime="2019-07-01 09:01:42 -0400">
+        <a class="u-url dates" href="the-state-of.html">Jul 1, 2019</a>
+      </time>
+    </h2>
+  </header>
+  <section class="e-content post-body">
+      <p><strong>Update (April 11, 2020):</strong> <a href="../../../2020/04/12/replacing-recaptcha-with.html">hCaptcha is now a viable replacement for reCAPTCHA</a>.</p>
+
+<hr />
+
+<p>I use <a href="https://developers.google.com/recaptcha/docs/display">Google&rsquo;s reCAPTCHA v2</a> on my <a href="https://maxmasnick.com/contact">website&rsquo;s contact form</a> to prevent spam from automated systems. It seems to work fine – the only spam I get is manually produced by real humans trying to convince me to post their garbage on my blog.</p>
+
+<p>Long-term it looks like Google is moving to <a href="https://www.google.com/recaptcha/intro/v3.html">reCAPTCHA v3</a>, which apparently should be run on every single page of my site to be most effective and <a href="https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side">uses the presence of a Google cookie as a signal to identify humans from robots</a>.</p>
+
+<p>I would prefer to not run extra mystery-meat JavaScript on every page of my site and penalize humans who don&rsquo;t stay signed into Google services, and I&rsquo;ve found recent reCAPTCHA v2 challenges increasingly difficult and inconvenient. Because my site is not a magnet for targeted spam attacks, most likely any sort of CAPTCHA would work fine – I don&rsquo;t strictly need the high sensitivity of reCAPTCHA v2 or v3.</p>
+
+<p>I spent a bit of time looking at alternatives, <a href="https://news.ycombinator.com/item?id=20058697">starting with this &ldquo;Ask HN&rdquo; post</a> and then doing some research on my own. I turns out there are pretty much no alternatives to reCAPTCHA. The few that were mentioned on &ldquo;alternative to reCAPTCHA&rdquo; lists seem to be shut down, their websites returning 404 errors or (ironically) taken over by spam.</p>
+
+<p>The one possibly viable option I found was <a href="http://textcaptcha.com">TextCaptcha</a>, which according to <a href="https://pinboard.in/">Pinboard</a> I first found back in 2013 and subsequently forgot about. However, their API is not available over HTTPS so <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">I can&rsquo;t use it on my HTTPS-enabled site</a> without either a proxy or setting up a server-generated contact page.</p>
+
+<p>Therefore my options are:</p>
+
+<ol>
+<li>Write my own CAPTCHA in JavaScript (would be effective but might have usability edge cases)</li>
+<li>Replace my static contact form with a dynamically generated page (adds complexity and maintenance to my website, will be slower to end users than a static page)</li>
+<li>Continue using reCAPTCHA v2 for now, while I work on a solution for using TextCaptcha that gets around the HTTPS issue.</li>
+</ol>
+
+<p>The last option seems the best for me. I wish there was a non-creepy state-of-the-art CAPTCHA option, but I suspect these attributes are mutually exclusive for large websites today.</p>
+
+  </section>
+
+  
+
+  <section id="post-meta" class="clearfix p-author h-card">
+    <a href="../../../index.html" class="u-url">
+  	
+		<img class="u-photo avatar" src="https://micro.blog/max/avatar.jpg" width="96" height="96">
+		<div>
+		  <span class="p-name dark">Max Masnick</span>
+		  <span><a href="https://micro.blog/max">@max</a></span>
+		</div>
+	
+    </a>
+  </section>
+</article>
+
+  </section>
+  <footer id="footer">
+
+<section id="wrapper">
+  <ul>
+    <li><a href="../../../feed.xml">RSS</a></li>
+    <li><a href="../../../feed.json">JSON Feed</a></li>
+    <li><a href="https://micro.blog/max" rel="me">Micro.blog</a></li>
+
+  </ul>
+  <form method="get" id="search" action="https://duckduckgo.com/">
+    <input type="hidden" name="sites" value="https://masnick.blog/"/>
+    <input type="hidden" name="k8" value="#444444"/>
+    <input type="hidden" name="k9" value="#ee4792"/>
+    <input type="hidden" name="kt" value="h"/>
+    <input class="field" type="text" name="q" maxlength="255" placeholder="To search, type and hit Enter&hellip;"/>
+    <input type="submit" value="Search" style="display: none;" />
+  </form>
+</section>
+
+</footer>
+
+  <p style="text-align: center;"><small style="color: #ccc; font-size: 13.5px;">© <a href="https://maxmasnick.com" style="color: #ccc !important;">Max Masnick</a>. Views expressed here are mine alone.</small></p>
+
+
+
+<script src="https://gayal.maxmasnick.com/script.js" site="UBZHDIVA" defer></script>
+
+		
+</body>
+</html>

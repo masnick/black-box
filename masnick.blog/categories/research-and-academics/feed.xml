@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0">
+  <channel>
+    <title>Research and Academics on Max Masnick, PhD</title>
+    <link>https://masnick.blog/categories/research-and-academics/</link>
+    <description></description>
+    
+    <language>en</language>
+    
+    <lastBuildDate>Sun, 12 Apr 2020 13:01:53 -0400</lastBuildDate>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2020/04/12/ive-also-updated.html</link>
+      <pubDate>Sun, 12 Apr 2020 13:01:53 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2020/04/12/ive-also-updated.html</guid>
+      <description>&lt;p&gt;I’ve also updated my &lt;a href=&#34;https://maxmasnick.com/projects/reference-managers/&#34;&gt;reference management software guide&lt;/a&gt;. I’m now using Paperpile exclusively thanks to beta access to their iOS apps and Word plugin. Once these are publicly available, this will be by far the best option for reference management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2020/04/12/ive-written-an.html</link>
+      <pubDate>Sun, 12 Apr 2020 12:58:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2020/04/12/ive-written-an.html</guid>
+      <description>&lt;p&gt;I’ve written an updated &lt;a href=&#34;https://maxmasnick.com/kb/project-organization/&#34;&gt;guide for organizing data analysis projects&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/12/09/i-just-discovered.html</link>
+      <pubDate>Mon, 09 Dec 2019 13:20:36 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/12/09/i-just-discovered.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://maxmasnick.com/kb/rlang/creating-data-frames/&#34;&gt;I just discovered the &lt;code&gt;tribble&lt;/code&gt; function&lt;/a&gt;, which makes it easy to quickly construct data frames (well, &lt;code&gt;tibbles&lt;/code&gt;) in R inline. It&amp;rsquo;s kind of like &lt;code&gt;datalines&lt;/code&gt; with a DATA Step in SAS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/18/quick-update-to.html</link>
+      <pubDate>Mon, 18 Nov 2019 10:43:32 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/18/quick-update-to.html</guid>
+      <description>&lt;p&gt;Quick update to my &lt;a href=&#34;https://www.maxmasnick.com/projects/reference-managers/&#34;&gt;reference managers roundup&lt;/a&gt; to add &lt;a href=&#34;http://citeas.org/&#34;&gt;CiteAs&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://citeas.org&#34;&gt;CiteAs&lt;/a&gt; is a simple tool for getting a properly-formatted citation for any DOI or &amp;ndash; more importantly &amp;ndash; open source software. &lt;a href=&#34;http://citeas.org/cite/https://cran.r-project.org/web/packages/stringr&#34;&gt;Here&amp;rsquo;s an example for the &lt;code&gt;stringr&lt;/code&gt; R package&lt;/a&gt;. The URLs for CiteAs are nicely formatted (&lt;code&gt;http://citeas.org/cite/https://cran.r-project.org/web/packages/stringr&lt;/code&gt; for the &lt;code&gt;stringr&lt;/code&gt; example), making it easy to create &lt;a href=&#34;https://gist.github.com/masnick/755d900fc68b97b1ea661c0dc76ddce2&#34;&gt;a &amp;ldquo;Cite this page&amp;rdquo; bookmarklet&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VS Code Is the Best Way to Work in Jupyter Notebooks</title>
+      <link>https://masnick.blog/2019/10/28/vs-code-is.html</link>
+      <pubDate>Mon, 28 Oct 2019 10:52:18 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/28/vs-code-is.html</guid>
+      <description>&lt;p&gt;Earlier this month, &lt;a href=&#34;https://devblogs.microsoft.com/python/announcing-support-for-native-editing-of-jupyter-notebooks-in-vs-code/&#34;&gt;Microsoft announced native support for Jupyter notebooks in VS Code&lt;/a&gt;. I just got the chance to try it out today, and it works great.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/f13b40e8ba.png&#34; alt=&#34;Jupyter vscode&#34; title=&#34;jupyter_vscode.png&#34; border=&#34;0&#34; width=&#34;2922&#34; height=&#34;2478&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why does this matter? Primarily because the web interface for Jupyter notebooks doesn&amp;rsquo;t have many of the features Python programmers who use &lt;a href=&#34;https://en.wikipedia.org/wiki/Integrated_development_environment&#34;&gt;IDEs&lt;/a&gt; are used to, such as autocomplete and interactive debugging. These features make programming in Python much faster and less error-prone.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve tried to use &lt;a href=&#34;https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html&#34;&gt;PyCharm&amp;rsquo;s Jupyter notebook support&lt;/a&gt; in the past, but it ran quite slow even on my very beefy computer. (This was at least a year ago, so it may no longer be true.)&lt;/p&gt;
+
+&lt;p&gt;In my testing, VS Code is lightning fast and the autocomplete support is great. Interactive debugging currently works via exporting the notebook as a Python script, and according to their blog post they are planning to add debugging features directly to Jupyter cells in the future.&lt;/p&gt;
+
+&lt;p&gt;For anyone who does serious work in Jupyter notebooks, I highly recommend checking out VS Code.&lt;/p&gt;
+
+&lt;p&gt;(PyCharm is also generally great, but is more complex and requires a license for Jupyter notebook support. The license is free for academics/research; paid otherwise.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting paper on racial bias in a commercial healthcare risk prediction algorithm</title>
+      <link>https://masnick.blog/2019/10/27/interesting-paper-on.html</link>
+      <pubDate>Sun, 27 Oct 2019 14:24:44 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/27/interesting-paper-on.html</guid>
+      <description>&lt;p&gt;There’s an interesting paper in &lt;a href=&#34;https://science.sciencemag.org/content/366/6464/447.full&#34;&gt;&lt;em&gt;Science&lt;/em&gt; by Ziad Obermeyer and colleagues on racial bias in healthcare risk prediction algorithms&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The bias arises because the algorithm predicts health care costs rather than illness, but unequal access to care means that we spend less money caring for Black patients than for White patients. Thus, despite health care cost appearing to be an effective proxy for health by some measures of predictive accuracy, large racial biases arise. We suggest that the choice of convenient, seemingly effective proxies for ground truth can be an important source of algorithmic bias in many contexts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The effect of this bias is that healthier White patients were referred for extra services in place of less-healthy Black patients (who presumably needed the extra services more).&lt;/p&gt;
+
+&lt;p&gt;This is a good reminder for anyone working on healthcare models to always stratify to see if the model behaves differently for traditionally marginalized groups. Not fixing these issues has serious real-world consequences on people’s health!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/10/12/a-tweet-from.html</link>
+      <pubDate>Sat, 12 Oct 2019 08:54:33 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/12/a-tweet-from.html</guid>
+      <description>&lt;p&gt;A tweet from &lt;a href=&#34;https://twitter.com/JAMA_current/status/1182445844869480448&#34;&gt;JAMA&lt;/a&gt; earlier this week:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This issue JAMA publishes a &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2019.12976?guestAccessKey=8b43141a-13f0-40e7-830d-1453cd18537b&#34;&gt;Retraction and Replacement notice&lt;/a&gt; for an RCT of transitional care for #COPD. Following discovery of an error in the original analysis, the reanalysis now shows the study’s observed effect changing from strong benefit to harm&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a striking reminder of the consequences of errors in analysis.&lt;/p&gt;
+
+&lt;p&gt;Following best practices, like version control and peer review of analysis code, can help catch errors before publication.&lt;/p&gt;
+
+&lt;p&gt;But code will never be 100% bug free. Best practices also help identify the source and consequence of bugs – if you end up having to issue a correction or retract a paper, you&amp;rsquo;ll be able to reproduce the bad analysis along with a corrected one to conclusively show the cause and effect of the issue.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/08/29/basecamp-has-refreshed.html</link>
+      <pubDate>Thu, 29 Aug 2019 09:21:39 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/08/29/basecamp-has-refreshed.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://basecamp.com/&#34;&gt;Basecamp&lt;/a&gt; has refreshed their branding, and has added a new free plan for personal use!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/08/27/how-did-i.html</link>
+      <pubDate>Tue, 27 Aug 2019 09:32:20 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/08/27/how-did-i.html</guid>
+      <description>&lt;p&gt;How did I not know about &lt;a href=&#34;https://tablecruncher.com/&#34;&gt;Tablecruncher&lt;/a&gt;?! It&amp;rsquo;s a Mac utility for viewing and editing large CSV (and other delimited text files). Took 11 seconds to open a 350MB tab-delimited file!! Free for viewing, $35 to edit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spreadsheets are (mostly) amazing</title>
+      <link>https://masnick.blog/2019/08/11/spreadsheets-are-mostly.html</link>
+      <pubDate>Sun, 11 Aug 2019 09:27:09 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/08/11/spreadsheets-are-mostly.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.reifyworks.com/writing/2017-01-25-i-was-wrong-about-spreadsheets-and-im-sorry&#34;&gt;Michael Bernstein, writing about spreadsheets vs. programming&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Spreadsheets are amazing, they solve specific problems in an optimal way, and they are as useful as a currency as we could hope for in information exchange.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I agree spreadsheets are very powerful and accessible. Excel is one of my all-time favorite applications! But there are two fundamental problems with spreadsheets:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The way spreadsheets are structured makes it very difficult to find bugs in formulas or peer review them. In fact, a complex spreadsheet may be impossible to understand for anyone but the author.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com&#34;&gt;Version control&lt;/a&gt; and &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Diff&#34;&gt;&amp;ldquo;diff&amp;rdquo;&lt;/a&gt; capabilities are far less advanced for spreadsheets than for programming languages. This is important for identifying the impact of changes and understanding the history of how a file was constructed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I&amp;rsquo;m not saying we should throw out Excel and do everything in FORTRAN. But we need to be aware of these limitations, especially when using spreadsheets to make major decisions or in mission critical applications.&lt;/p&gt;
+
+&lt;p&gt;I wish makers of spreadsheet software would add in more advanced capabilities to address these problems, but I&amp;rsquo;m not holding my breath.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/07/27/protocolsio-looks-like.html</link>
+      <pubDate>Sat, 27 Jul 2019 16:26:04 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/07/27/protocolsio-looks-like.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.protocols.io/&#34;&gt;Protocols.io&lt;/a&gt; looks like an interesting way to publish preprints of research protocols. Here&amp;rsquo;s an example of a &lt;a href=&#34;https://www.protocols.io/view/robust-measurement-of-the-real-world-effectiveness-2bqgamw&#34;&gt;protocol preprint for a study on treating Ulcerative Colitis&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Soulver: still the best way to do math (on macOS and iOS)</title>
+      <link>https://masnick.blog/2019/07/11/soulver-still-the.html</link>
+      <pubDate>Thu, 11 Jul 2019 14:44:21 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/07/11/soulver-still-the.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a huge fan of &lt;a href=&#34;https://www.acqualia.com/soulver/&#34;&gt;Soulver&lt;/a&gt;, a scratchpad for doing calculations and unit conversions of all kinds. It&amp;rsquo;s great for things that aren&amp;rsquo;t complex enough to need a spreadsheet, but are too fiddly for a standard calculator. This is what it looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/b379552610.png&#34; alt=&#34;Soulver&#34; title=&#34;soulver.png&#34; border=&#34;0&#34; width=&#34;817&#34; height=&#34;528&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I maintain that anyone who is doing any math on their Mac or iOS device should have Soulver open at all times. &lt;a href=&#34;https://marco.org/2014/05/13/cheap-soulver&#34;&gt;I&amp;rsquo;m not the only one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But what about people on Windows or who want to use a web browser? I was hoping &lt;a href=&#34;https://news.ycombinator.com/item?id=20403270&#34;&gt;this thread on Hacker News&lt;/a&gt; would surface some good options, but none of the suggestions I tried were as well-designed, well-maintained, or usable.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://speedcrunch.org/&#34;&gt;SpeedCrunch&lt;/a&gt; was the one suggestion that looked interesting – it&amp;rsquo;s open source and available on Linux, Mac, and Windows (not mobile though). The design differs from Soulver but the basic idea is the same. Unfortunately the Mac version is not signed with a developer certificate so I&amp;rsquo;m not comfortable installing it on my computer. If you are braver than I, &lt;a href=&#34;https://maxmasnick.com/contact&#34;&gt;let me know&lt;/a&gt; how it works.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/04/04/rachelss-tweetstorm-on.html</link>
+      <pubDate>Thu, 04 Apr 2019 13:31:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/04/04/rachelss-tweetstorm-on.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://threadreaderapp.com/thread/1113551621190033408.html&#34;&gt;@rachelss&amp;rsquo; tweetstorm&lt;/a&gt; on speaking tips for academic presentations (unrolled and reformatted):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Had a theater student work w grad students on presentation skills for grad seminar this week. Saw great improvements in just an hour. Some things I learned. 1/&lt;/p&gt;
+
+&lt;p&gt;(1) Turn nervous energy and movements into intentional movements; channel the energy and use it. Own the movement (eg walking, gestures).&lt;/p&gt;
+
+&lt;p&gt;(2) Avoid pauses within sentences. Intentionally pause between sentences to avoid this and frame individual thoughts. 2/&lt;/p&gt;
+
+&lt;p&gt;(3) Deliver whole thoughts to a group in the audience. Don&amp;rsquo;t split the thought between groups - this makes movements between groups intentional.&lt;/p&gt;
+
+&lt;p&gt;(4) Place weight on words to indicate importance; vary tone and inflection to keep things interesting. Practice w dif tones. 3/&lt;/p&gt;
+
+&lt;p&gt;(5) Speak &amp;ldquo;brightly&amp;rdquo; and direct your voice up (at forehead level so you don&amp;rsquo;t have to make uncomfortable eye contact). (6) Develop a warmup or routine prior to speaking to avoid nerves. 4/5&lt;/p&gt;
+
+&lt;p&gt;All in all, great experience working with someone who knows how to engage an audience and present well due to theater training. I recommend it. 5/5&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>eLife’s first computationally reproducible journal article</title>
+      <link>https://masnick.blog/2019/02/26/elifes-first-computationally.html</link>
+      <pubDate>Tue, 26 Feb 2019 08:06:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/02/26/elifes-first-computationally.html</guid>
+      <description>&lt;p&gt;The journal eLife &lt;a href=&#34;https://elifesciences.org/labs/ad58f08d/introducing-elife-s-first-computationally-reproducible-article&#34;&gt;recently published a “computationally reproducible” article&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Today eLife, in collaboration with Substance, Stencila and Tim Errington, Director of Research ar the Center for Open Science, US, published its first reproducible article, based on one of Errington’s papers in the Reproducibility Project: Cancer Biology. This reproducible version of the article showcases some of what’s possible with the new RDS tools, and we invite researchers to explore the newly available opportunities to tell their story.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;eLife’s reproducible format essentially gives readers functionality like you would find in a Jupyter notebook or RMarkdown document, but in the standard browser interface on eLife’s website. This lets you modify analysis code and re-generate tables/figures without having to download anything, or set up a local R or Python environment!&lt;/p&gt;
+
+&lt;p&gt;If you read &lt;a href=&#34;https://elifesciences.org/labs/ad58f08d/introducing-elife-s-first-computationally-reproducible-article&#34;&gt;their post&lt;/a&gt; about this, it’s clear that a &lt;em&gt;lot&lt;/em&gt; of effort went into the technology stack making this possible. It’s an impressive effort, and sorely needed by the scientific community.&lt;/p&gt;
+
+&lt;p&gt;Hopefully other publishers will follow suit—but even if they don’t, eLife uses an industry-standard format called JATS (of course it’s XML-based), which should allow publishers to handle these sorts of documents even if they don’t support the full suite of in-browser code execution capabilities that eLife does.&lt;/p&gt;
+
+&lt;p&gt;eLife is also working on better support for converting from Jupyter and RMarkdown to DAR (their document archive format). Kudos to them for supporting the literate programming technology the community is already using, rather than trying to force authors to use something else.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/02/22/stata-people-ive.html</link>
+      <pubDate>Fri, 22 Feb 2019 17:52:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/02/22/stata-people-ive.html</guid>
+      <description>&lt;p&gt;Stata people: I&amp;rsquo;ve got a &lt;a href=&#34;https://maxmasnick.com/kb/stata/markstat/&#34;&gt;nice setup for literate programming with Markdown&lt;/a&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/02/10/for-some-reason.html</link>
+      <pubDate>Sun, 10 Feb 2019 15:40:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/02/10/for-some-reason.html</guid>
+      <description>&lt;p&gt;For some reason I&amp;rsquo;ve ran across several open source stats tools that I had never heard of before in the last week:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/pspp/&#34;&gt;PSPP&lt;/a&gt;, an open source replacement for SPSS.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jasp-stats.org&#34;&gt;JASP&lt;/a&gt;, a friendly GUI-based stats package powered by R.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jamovi.org&#34;&gt;jamovi&lt;/a&gt;, another friendly GUI-based, R-powered stats package.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://radiant-rstats.github.io/docs/install.html&#34;&gt;Radiant&lt;/a&gt;, yet another front-end for R. This one is more focused on “business intelligence” (read: visualization and exploration) than stats, but it does have a fair amount of stats functionality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I keep track of these sorts of things on the &lt;a href=&#34;https://maxmasnick.com/projects/epi-tools/&#34;&gt;epidemiology tools&lt;/a&gt; page on my website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/01/14/ive-updated-my.html</link>
+      <pubDate>Mon, 14 Jan 2019 11:37:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/01/14/ive-updated-my.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve updated my &lt;a href=&#34;https://maxmasnick.com/projects/reference-managers/&#34;&gt;&amp;ldquo;Thoughts on Reference Management Software&amp;rdquo;&lt;/a&gt; post with a Wirecutter-esque &amp;ldquo;recommendations for most people&amp;rdquo; section. If you&amp;rsquo;re in the market for a reference manager, check it out!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pros and cons of Jupyter notebooks</title>
+      <link>https://masnick.blog/2018/08/28/pros-and-cons.html</link>
+      <pubDate>Tue, 28 Aug 2018 16:02:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/08/28/pros-and-cons.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/preview?slide=id.g362da58057_0_639&#34;&gt;This presentation from Joel Grus&lt;/a&gt; on the problems inherent with Jupyter notebooks is great.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve experienced a lot of these problems first-hand, especially issues related to running notebook cells out of order, code organization, and Jupyter notebooks&amp;rsquo; poor ergonomics compared any modern code editor. My rule of thumb: anything that needs tests or code review should be moved out of a notebook into a &lt;code&gt;.py&lt;/code&gt; file. Same for anything producing data for external consumption or used in making a decision. In other words, Jupyter notebooks are for exploration only.&lt;/p&gt;
+
+&lt;p&gt;As a counterpoint, Netflix has &lt;a href=&#34;https://medium.com/netflix-techblog/notebook-innovation-591ee3221233&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6&#34;&gt;posts&lt;/a&gt; on how they’re using Jupyter notebooks extensively. They have had to throw engineering resources at some of the problems described by Grus to make Jupyter notebooks viable for them, however.&lt;/p&gt;
+
+&lt;p&gt;Just like any tool, Jupyter notebooks have pros and cons. We run into problems when the low friction (one of the pros!) masks the downsides of working extensively in notebooks, especially when downsides like poor reproducibility are only evident later.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2018/07/19/i-just-ran.html</link>
+      <pubDate>Thu, 19 Jul 2018 17:36:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/07/19/i-just-ran.html</guid>
+      <description>&lt;p&gt;I just ran across &lt;a href=&#34;https://stenci.la&#34;&gt;Stencila&lt;/a&gt;, which claims to be &amp;ldquo;the office suite for reproducible research&amp;rdquo;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The calls for research to be transparent and reproducible have never been louder. But today&amp;rsquo;s tools for reproducible research can be intimidating - especially if you&amp;rsquo;re not a coder. We&amp;rsquo;re building software for reproducible research with the intuitive, visual interfaces that you and your colleagues are used to.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Something like this is desperately needed, but adoption will be an uphill battle. Academics are often still reluctant to use Google Docs instead of emailing Word files back and forth, and making this switch would save everyone a &lt;em&gt;huge&lt;/em&gt; amount of time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2018/06/14/notion-looks-like.html</link>
+      <pubDate>Thu, 14 Jun 2018 22:52:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/06/15/notion-looks-like.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.notion.so&#34;&gt;Notion&lt;/a&gt; looks like a pretty interesting collaboration platform. It offers functionally like Trello, Evernote, and Google Sheets in a single unified product.&lt;/p&gt;
+
+&lt;p&gt;My biggest concern with Notion is data portability. I feel pretty safe that Atlassian and Google are going to be around for a while, and if they ever shut down products I use, there are so many users that there will be lots of good export tools. Even if Notion has a good API, it would take some work to extract everything and ingest into something else.&lt;/p&gt;
+
+&lt;p&gt;I’ve recently moved back to a folder structure of text files on Dropbox for my personal notes after using Apple Notes and &lt;a href=&#34;http://www.bear-writer.com&#34;&gt;Bear&lt;/a&gt;. It feels good knowing that my notes are essentially plain text files in a folder — no weird databases or opaque iCloud to worry about.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2018/06/12/sounds-like-mendeley.html</link>
+      <pubDate>Tue, 12 Jun 2018 15:32:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/06/12/sounds-like-mendeley.html</guid>
+      <description>&lt;p&gt;Sounds like Mendeley is doing some squirrelly stuff with encrypting their local database to prevent users exporting to other reference managers 👎.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve updated my &lt;a href=&#34;https://maxmasnick.com/2015/02/28/reference-managers/#update-june-12-2018&#34;&gt;reference management software roundup&lt;/a&gt; accordingly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2018/05/26/cmyeaton-my-standard.html</link>
+      <pubDate>Sat, 26 May 2018 16:23:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/05/26/cmyeaton-my-standard.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/cmyeaton/status/1000449416111763457&#34;&gt;@cmyeaton&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;My standard advice is 1. download Anaconda or Enthought 2. buy Python for Data Analysis (&lt;a href=&#34;https://amzn.to/2ITq5ME&#34;&gt;https://amzn.to/2ITq5ME&lt;/a&gt;) 3. focus on working through a project, not aimless learning.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Solid advice, especially item 3. Aimless learning is not a good way to learn anything involving programming&amp;hellip;having an important project is key for motivation to break through inevitable frustration.&lt;/p&gt;
+
+&lt;p&gt;I would add one more piece of advice: if you can, find a mentor who can answer high-level questions (&amp;ldquo;does approach X make sense?&amp;rdquo;) and can help if you get &lt;em&gt;really&lt;/em&gt; stuck.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2018/05/24/zoterobib-is-a.html</link>
+      <pubDate>Thu, 24 May 2018 11:31:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2018/05/24/zoterobib-is-a.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://zbib.org&#34;&gt;ZoteroBib&lt;/a&gt; is a new service from &lt;a href=&#34;https://www.zotero.org&#34;&gt;Zotero&lt;/a&gt; for quickly generating bibliographies from DOIs, PubMed IDs, etc. There are other similar services, but none this nice. Perfect for formatting references for a CV, or generating a one-off references section for a short article.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2017/12/26/180247.html</link>
+      <pubDate>Tue, 26 Dec 2017 14:02:47 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2017/12/26/180247.html</guid>
+      <description>&lt;p&gt;How do people map expressions of probability (like &amp;ldquo;very good chance&amp;rdquo;) onto actual numerical probability? (Source: &lt;a href=&#34;https://github.com/zonination/perceptions&#34;&gt;zonination on Github&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/7cec71c67b.png&#34; alt=&#34;14afa32af0 jpg&#34; title=&#34;14afa32af0.jpg.png&#34; border=&#34;0&#34; width=&#34;960&#34; height=&#34;960&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2017/12/03/from-stop-using.html</link>
+      <pubDate>Sun, 03 Dec 2017 12:32:20 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2017/12/03/from-stop-using.html</guid>
+      <description>&lt;p&gt;From &lt;a href=&#34;https://www.wsj.com/articles/stop-using-excel-finance-chiefs-tell-staffs-1511346601&#34;&gt;Stop Using Excel, Finance Chiefs Tell Staffs&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Finance chiefs say the ubiquitous spreadsheet software that revolutionized accounting in the 1980s hasn’t kept up with the demands of contemporary corporate finance units. Errors can bloom because data in Excel is separated from other systems and isn’t automatically updated.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is certainly true, but the other problem is that there is no good way to code review formulas and no version control with the ability to &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Diff_utility&#34;&gt;diff&lt;/a&gt; formulas. This allows errors to sneak in with no mechanism to detect them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

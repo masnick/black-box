@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html class='no-js'>
+<head>
+<title>Technical Notes</title>
+<meta content='width=device-width,initial-scale=1' name='viewport'>
+<meta name="description" content="Documentation of fixes for programming/computing annoyances." />
+<meta property="og:title" content="Technical Notes" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tech-notes.maxmasnick.com/" />
+<meta property="og:site_name" content="Technical Notes" />
+<meta property="og:description" content="Documentation of fixes for programming/computing annoyances." />
+<meta property="og:image" content="https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/large_Screen_Shot_2020-04-09_at_9.47.10_AM.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1589" />
+<meta property="og:image" content="https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/large_PastedGraphic-2.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="543" />
+<meta property="og:image" content="https://phaven-prod.s3.amazonaws.com/files/profile_pic/asset/1873652/GrIm25m2D_xesEbFSEmlBH85rHQ/large_445539d76b87e8b38823f3a34743a9b0.png" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/large_Screen_Shot_2020-04-09_at_9.47.10_AM.png" />
+<link href="https://phthemes.s3.amazonaws.com/588/1ocEHWaOVSuV-f1T/images/favicon.ico?v=1573570788" rel='shortcut icon' type='image/x-icon'>
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700,300|Crimson+Text:400,400italic&amp;subset=latin,latin-ext" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://phthemes.s3.amazonaws.com/588/1ocEHWaOVSuV-f1T/blog.css?v=1573570787">
+<link rel="alternate" type="application/atom+xml" href="https://tech-notes.maxmasnick.com/posts.atom">
+<script>
+        window.Posthaven = window.Posthaven || {};
+        window.Posthaven.currentPage = {"postIds":"1548148,1529000,1493833,1493701,1489676,1488248,1442542,1442108,1393793,1378813","pageCounter":"site-966"};
+        window.Posthaven.domain = 'posthaven.com';
+        window.Posthaven.strings = {"archive.no_results":"No results found.","date":null,"forms.comment.anon_error":"Please enter your name and email.","forms.subscribe.after_subscribe_notice":"You have been subscribed. Check your email to confirm your subscription.","forms.subscribe.after_follow_notice":"You're now following this blog.","forms.subscribe.after_unfollow_notice":"You've unfollowed this blog.","gallery.of":"of","relative_date":null};
+      </script>
+<link href="https://posthaven-assets.s3.amazonaws.com/assets/blog-internal-ebf9cc379e51c299993a0f443d1fee65.css" media="all" rel="stylesheet" />
+</head>
+<body id='site_966'>
+<div id='container'>
+<nav class='posthaven-user-menu posthaven-control'>
+<span class='posthaven-user-required' style='display: none;'>
+<span class='posthaven-admin-required' style='display: none;'>
+<a href="https://posthaven.com/dashboard#sites/966">Manage</a>
+<a href="https://posthaven.com/dashboard#sites/966/posts/new">New Post</a>
+</span>
+<a href="https://tech-notes.maxmasnick.com/posthaven/xd/logout" data-posthaven-method="delete">Logout</a>
+</span>
+<span class='posthaven-anon'>
+<a href="https://posthaven.com/users/sign_in?return_host=tech-notes.maxmasnick.com" class="posthaven-login">Login</a>
+</span>
+</nav>
+<header id='topbar'>
+<a href="https://posthaven.com/"><div class='posthaven-tab'></div></a>
+</header>
+<div id='flash'>
+</div>
+<header id='header'>
+<h1>
+<a href="index.html">Technical Notes</a>
+</h1>
+<h2>Documentation of fixes for programming/computing annoyances.</h2>
+</header>
+<div id='main_container'>
+<div id="main">
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/vscode-add-cmd-shift-m-keyboard-shortcut-for-percent--percent-pipe-operator-for-r-development">VSCode: Add &quot;cmd-shift-m&quot; keyboard shortcut for &quot;%&gt;%&quot; (pipe operator) for R development</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1548148">
+<div class="posthaven-post-body"><p>RStudio uses the "cmd-shift-m" keyboard shortcut to insert the tidyverse pipe operator (<code>%&gt;%</code>). If you are using VSCode to write R code, it's nice to have this there too. Here's what you need to add to <code>keybindings.json</code> to get this into place:</p>
+<pre><code>    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "%&gt;% "
+        }
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus",
+        "args": {
+            "text": "%&gt;% "
+        }
+    }
+</code></pre></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1548148' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='VSCode: Add "cmd-shift-m" keyboard shortcut for "%&gt;%" (pipe operator) for R development' data-url='https://tech-notes.maxmasnick.com/vscode-add-cmd-shift-m-keyboard-shortcut-for-percent--percent-pipe-operator-for-r-development' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/vscode-add-cmd-shift-m-keyboard-shortcut-for-percent--percent-pipe-operator-for-r-development"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1590145901"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/keyboard-shortcut-to-close-macos-notification-banners-or-busycal-alarm-window-via-keyboard-maestro-and-applescript">Keyboard shortcut to close macOS notification banners or BusyCal Alarm window (via Keyboard Maestro and AppleScript)</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1529000">
+<div class="posthaven-post-body"><p> <div class="posthaven-gallery " id="posthaven_gallery[1554274]">
+<div class="posthaven-gallery-car">
+<p class="posthaven-file posthaven-file-image posthaven-file-state-processed">
+<img class="posthaven-gallery-image" src="https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/medium_Screen_Shot_2020-04-09_at_9.47.10_AM.png" data-posthaven-state='processed' data-medium-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/medium_Screen_Shot_2020-04-09_at_9.47.10_AM.png' data-medium-width='800' data-medium-height='1059' data-large-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/large_Screen_Shot_2020-04-09_at_9.47.10_AM.png' data-large-width='1200' data-large-height='1589' data-thumb-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/thumb_Screen_Shot_2020-04-09_at_9.47.10_AM.png' data-thumb-width='200' data-thumb-height='200' data-xlarge-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/xlarge_Screen_Shot_2020-04-09_at_9.47.10_AM.png' data-xlarge-width='1406' data-xlarge-height='1862' data-orig-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2431142/SZgFBP9syQ5-Aet5rWSPGpKiN_Y/Screen_Shot_2020-04-09_at_9.47.10_AM.png' data-orig-width='1406' data-orig-height='1862' data-posthaven-id='2431142' />
+</p>
+</div>
+<div class="posthaven-gallery-cdr">
+</div>
+</div>
+</p><p><a href="https://maxmasnick.com/media/posthaven/close_notification_banner.kmmacros.zip" title="Link: https://maxmasnick.com/media/posthaven/close_notification_banner.kmmacros.zip">Download the macro here</a>.</p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1529000' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Keyboard shortcut to close macOS notification banners or BusyCal Alarm window (via Keyboard Maestro and AppleScript)' data-url='https://tech-notes.maxmasnick.com/keyboard-shortcut-to-close-macos-notification-banners-or-busycal-alarm-window-via-keyboard-maestro-and-applescript' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/keyboard-shortcut-to-close-macos-notification-banners-or-busycal-alarm-window-via-keyboard-maestro-and-applescript"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1586424656"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/ios-shortcut-to-convert-the-contents-of-a-tweet-to-markdown">iOS shortcut to convert the contents of a tweet to Markdown</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1493833">
+<div class="posthaven-post-body"><p>I often find myself wanting to grab the contents of a tweet in Markdown format to post on my blog, so I’ve created an <a href="https://www.icloud.com/shortcuts/925de6ed8f074a22bb16957c9a7b2ab4">iOS shortcut that takes the URL to a tweet, grabs the contents via the public Twitter API, expands t.co URLs, and copies the content to the clipboard</a>.</p><p>Here’s an example tweet:</p><p><blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">It’s surprisingly hard to find a tweet with multiple URLs in it for API response testing purposes.<br><br>So here are my two favorite non-Google search engines:<br><br>1. <a href="https://t.co/jFqkR0eo8x">https://t.co/jFqkR0eo8x</a><br>2. <a href="https://t.co/UZD9mmtzEH">https://t.co/UZD9mmtzEH</a><br><br>👍</p>— Max Masnick (@masnick) <a href="https://twitter.com/masnick/status/1209899493048639488?ref_src=twsrc%5Etfw">December 25, 2019</a>
+</blockquote></p><p>And here’s what the output of the Shortcut looks like:</p><p><script src="https://gist.github.com/masnick/8584619144d5f1f21f0a5930089a1bea.js"></script></p><p></p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1493833' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='iOS shortcut to convert the contents of a tweet to Markdown' data-url='https://tech-notes.maxmasnick.com/ios-shortcut-to-convert-the-contents-of-a-tweet-to-markdown' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="response-count">
+<a href="https://tech-notes.maxmasnick.com/ios-shortcut-to-convert-the-contents-of-a-tweet-to-markdown">
+1 response
+</a>
+</span>
+<span class="slash-divider">&nbsp;&nbsp;//&nbsp;&nbsp;</span>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/ios-shortcut-to-convert-the-contents-of-a-tweet-to-markdown"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1577561387"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/open-frontmost-safari-tabs-in-google-chrome-with-applescript">Open frontmost Safari tabs in Google Chrome with AppleScript</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1493701">
+<div class="posthaven-post-body"><p><script src="https://gist.github.com/masnick/7b1896c7eb4375b18ea4a7dcfea15181.js"></script></p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1493701' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Open frontmost Safari tabs in Google Chrome with AppleScript' data-url='https://tech-notes.maxmasnick.com/open-frontmost-safari-tabs-in-google-chrome-with-applescript' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/open-frontmost-safari-tabs-in-google-chrome-with-applescript"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1577481550"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/batch-convert-word-files-to-pdf-with-applescript">Batch convert Word files to PDF with AppleScript</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1489676">
+<div class="posthaven-post-body"><p><script src="https://gist.github.com/masnick/88238c9806751cffbd3129cfaa4ae7df.js"></script></p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1489676' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Batch convert Word files to PDF with AppleScript' data-url='https://tech-notes.maxmasnick.com/batch-convert-word-files-to-pdf-with-applescript' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/batch-convert-word-files-to-pdf-with-applescript"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1576516628"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/clean-up-columns-with-dates-in-multiple-formats-in-reais">Clean up columns with dates in multiple formats in R</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1488248">
+<div class="posthaven-post-body"><p>I have a data frame in R where dates are in two different formats: <code>2019-01-01</code> and <code>01/01/2019</code>. These are stored as characters by default because R can't convert them to dates.</p>
+<p>There's a pretty easy way to clean this up, however:</p>
+<p><script src="https://gist.github.com/masnick/4975ec5860ccd98b6a517014bb006e6a.js"></script></p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class="tags">
+<h6>Tags</h6>
+<ul>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/r">r</a>
+</li>
+</ul>
+</div>
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1488248' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Clean up columns with dates in multiple formats in R' data-url='https://tech-notes.maxmasnick.com/clean-up-columns-with-dates-in-multiple-formats-in-reais' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/clean-up-columns-with-dates-in-multiple-formats-in-reais"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1576166599"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/storing-and-retrieving-passwords-in-bash-scripts-from-the-macos-keychain">Storing and retrieving passwords in bash scripts from the macOS keychain</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1442542">
+<div class="posthaven-post-body"><p>It's often convenient to store a password in <a href="https://support.apple.com/guide/keychain-access/what-is-keychain-access-kyca1083/mac">the macOS system keychain</a> and retrieve it inside a shell script.</p>
+<p>Here's the bash command for setting a password:</p>
+<pre><code>security add-generic-password -s "Keychain item name here" -a "username here" -p</code></pre>
+<p>Then enter your password when prompted.</p><p>After you run this once, you can retrieve the password in a script like this:</p>
+<pre><code>PASSWORD=`security find-generic-password -s "Keychain item name here" -a "username here" -w`
+</code></pre>
+<p>You can then use <code>$PASSWORD</code> whenever you need the password in your script.</p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1442542' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Storing and retrieving passwords in bash scripts from the macOS keychain' data-url='https://tech-notes.maxmasnick.com/storing-and-retrieving-passwords-in-bash-scripts-from-the-macos-keychain' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/storing-and-retrieving-passwords-in-bash-scripts-from-the-macos-keychain"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1565283540"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/backing-up-onenote-notebooks">Backing up OneNote notebooks</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1442108">
+<div class="posthaven-post-body">By default, OneNote stores notebooks on OneDrive in a “Documents/“ folder. But the notebooks are not downloaded locally by the OneDrive sync client — the sync client simply downloads “.url” link files that take you to the notebook on <a href="https://onenote.com">onenote.com</a>.<div><br></div><div>However, there is an easy way to grab a backup. Use the “Download” option on <a href="https://onedrive.com">onedrive.com</a> to download a .zip file of the entire “Documents/“ folder. This .zip will have all your notebooks in the <a href="https://docs.microsoft.com/en-us/openspecs/office_file_formats/ms-one/73d22548-a613-4350-8c23-07d15576be50">open, documented OneNote file format</a>.</div><div><br></div><div> <div class="posthaven-gallery " id="posthaven_gallery[1462610]">
+<div class="posthaven-gallery-car">
+<p class="posthaven-file posthaven-file-image posthaven-file-state-processed">
+<img class="posthaven-gallery-image" src="https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/medium_PastedGraphic-2.png" data-posthaven-state='processed' data-medium-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/medium_PastedGraphic-2.png' data-medium-width='800' data-medium-height='362' data-large-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/large_PastedGraphic-2.png' data-large-width='1200' data-large-height='543' data-thumb-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/thumb_PastedGraphic-2.png' data-thumb-width='200' data-thumb-height='200' data-xlarge-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/xlarge_PastedGraphic-2.png' data-xlarge-width='1344' data-xlarge-height='608' data-orig-src='https://phaven-prod.s3.amazonaws.com/files/image_part/asset/2308760/sHG8FmMiVuG8DY3SMlft3RhRg3o/PastedGraphic-2.png' data-orig-width='1344' data-orig-height='608' data-posthaven-id='2308760' />
+</p>
+</div>
+<div class="posthaven-gallery-cdr">
+</div>
+</div>
+</div><div><br></div><div>
+<b>Update (November 7, 2019)</b>: Thanks to <a href="https://davidmytton.blog" title="Link: https://davidmytton.blog">David Mytton</a> for pointing out that this only works for personal Office365 accounts. If you have a business account, OneDrive will store your OneNote notebooks in a "Notebooks/" folder rather than a "Documents/" folder, and it will not let you download this folder. <a href="https://twitter.com/NotedByRyan/status/1192456813720956929">This is a known issue and Microsoft is working to resolve it</a>.</div></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1442108' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Backing up OneNote notebooks' data-url='https://tech-notes.maxmasnick.com/backing-up-onenote-notebooks' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/backing-up-onenote-notebooks"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1565189051"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/unroll-tweetstorm-bookmarklet">Unroll tweetstorm bookmarklet</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1393793">
+<div class="posthaven-post-body"><p><code>window.location.href = 'https://threadreaderapp.com/search?q='+encodeURI(window.location.href)</code></p>
+<p>You can use <a href="https://mrcoles.com/bookmarklet/">this page to convert the above JavaScript to a bookmarklet</a>.</p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1393793' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Unroll tweetstorm bookmarklet' data-url='https://tech-notes.maxmasnick.com/unroll-tweetstorm-bookmarklet' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/unroll-tweetstorm-bookmarklet"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1554399535"></span></a>
+</span>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="post-title">
+<h2><a href="https://tech-notes.maxmasnick.com/using-applescript-to-activate-the-choose-which-speakers-to-use-button-in-itunes">Using AppleScript to activate the &quot;Choose which speakers to use&quot; button in iTunes</a></h2>
+</div>
+</header>
+<div class="post-body" id="post_body_1378813">
+<div class="posthaven-post-body"><p><script src="https://gist.github.com/masnick/3b257f3efe8858a316ad31dffe86423e.js"></script></p><p>Once the menu is active, you can use the arrow keys to navigate up and down, and return to select a given speaker. This allows you to tell iTunes to control a Homepod or other AirPlay 2 speaker from the keyboard.</p><p>Unfortunately there is no way I can find to automatically select a specific speaker – you <i>﻿have</i>﻿ to manually do it with the arrow keys.</p></div>
+</div>
+<footer class="homepage-post-footer">
+<div class='posthaven-share-links'>
+<div class='posthaven-share-item'>
+<a class='posthaven-upvote posthaven-control' data-post-id='1378813' href='javascript:void(0);'>
+<span class='posthaven-upvote-holder'>
+<span class='posthaven-upvote-icon'>
+<span class='posthaven-upvote-side'></span>
+<span class='posthaven-upvote-arrow'></span>
+</span>
+<span class='posthaven-upvote-label-area'>
+<span class='posthaven-upvote-label'><span>Up</span>vote</span>
+<span class='posthaven-upvoted-label'><span>Up</span>voted</span>
+<span class='posthaven-upvote-number'>0</span>
+</span>
+</span>
+</a>
+</div>
+<div class='posthaven-share-item posthaven-twitter-share'>
+<a class='twitter-share-button share-item' data-text='Using AppleScript to activate the "Choose which speakers to use" button in iTunes' data-url='https://tech-notes.maxmasnick.com/using-applescript-to-activate-the-choose-which-speakers-to-use-button-in-itunes' href='https://twitter.com/share'>Tweet</a>
+</div>
+</div>
+<span class="display-date">
+Posted
+<a href="https://tech-notes.maxmasnick.com/using-applescript-to-activate-the-choose-which-speakers-to-use-button-in-itunes"><span class="posthaven-formatted-date" data-format="RELATIVE" data-unix-time="1551190769"></span></a>
+</span>
+</footer>
+</article>
+<div class="pagination">
+<ul class='posthaven-default-pagination'>
+<li class='number active'>
+<a href='index.html'>1</a>
+</li>
+<li class='number'>
+<a href='https://tech-notes.maxmasnick.com/?page=2'>2</a>
+</li>
+<li class='number'>
+<a href='https://tech-notes.maxmasnick.com/?page=3'>3</a>
+</li>
+<li class='number'>
+<a href='https://tech-notes.maxmasnick.com/?page=4'>4</a>
+</li>
+<li class='number'>
+<a href='https://tech-notes.maxmasnick.com/?page=5'>5</a>
+</li>
+<li class='gap'>
+<a href='javascript:void(0)'>…</a>
+</li>
+<li class='next'>
+<a href='https://tech-notes.maxmasnick.com/?page=2'>Next</a>
+</li>
+<li class='last'>
+<a href='https://tech-notes.maxmasnick.com/?page=16'>Last</a>
+</li>
+</ul>
+</div>
+</div>
+<aside id='sidebar'>
+<section id='bio'>
+<h3>by Max Masnick</h3>
+<a href="http://www.maxmasnick.com">www.maxmasnick.com</a><br><br>
+<a href="https://twitter.com/_technotes">Follow <strong>@_technotes</strong> on Twitter</a>
+<br><br><a href="https://gist.github.com/masnick/6550665/raw/eb24a0c1a59071d6ad974469463b3a63d861139e/gistfile1.txt">Terms of use</a>.
+<div class="profile-pic">
+<img src="https://phaven-prod.s3.amazonaws.com/files/profile_pic/asset/1873652/GrIm25m2D_xesEbFSEmlBH85rHQ/medium_445539d76b87e8b38823f3a34743a9b0.png" width="72" height="72">
+</div>
+</section>
+<section class="search-archive">
+<form action='https://tech-notes.maxmasnick.com/archive' class='posthaven-archive-form'>
+<input name='query' placeholder='Search this site...' type='text'>
+</form>
+<div class="archive-link">
+<a href="https://tech-notes.maxmasnick.com/archive">Browse the Archive&nbsp;&raquo;</a>
+</div>
+</section>
+<section class="subscribe">
+<form action='https://tech-notes.maxmasnick.com/posthaven/subscription' class='posthaven-subscribe-form posthaven-control'>
+<a class='posthaven-anon posthaven-subscribe-prompt' href='javascript:void(0)'>
+Subscribe by email
+</a>
+<div class='posthaven-user-required' style='display:none'>
+<div class='posthaven-user-unsubscribe' style='display: none'>
+You're following this blog.
+<a data-method='DELETE' href='javascript:void(0);'>
+Unfollow
+</a>
+</div>
+<div class='posthaven-user-subscribe'>
+<a data-method='POST' href='javascript:void(0);'>
+Follow this Posthaven
+</a>
+</div>
+</div>
+<div class='posthaven-anon posthaven-subscribe-anon' style='display:none'>
+Enter your email address to get email alerts about new posts on this site.
+Unsubscribe anytime.
+<div class='posthaven-subscribe-error posthaven-form-error' style='display:none'>
+Email address is invalid.
+</div>
+<input name='email_address' placeholder='Email Address' type='text'>
+<input type='submit' value='Subscribe'>
+</div>
+</form>
+</section>
+<section id="tag_list_menu">
+<h3>Tags</h3>
+<ul>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/mailmate">mailmate</a>
+<span class="measure tag-count">7</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/ipython">ipython</a>
+<span class="measure tag-count">7</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/applescript">applescript</a>
+<span class="measure tag-count">7</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/python">python</a>
+<span class="measure tag-count">5</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/textexpander">textexpander</a>
+<span class="measure tag-count">4</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/OS%20X">OS X</a>
+<span class="measure tag-count">4</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/stata">stata</a>
+<span class="measure tag-count">3</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/Finder">Finder</a>
+<span class="measure tag-count">3</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/sas">sas</a>
+<span class="measure tag-count">2</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tag/fastmail">fastmail</a>
+<span class="measure tag-count">2</span>
+</li>
+<li>
+<a href="https://tech-notes.maxmasnick.com/tags/all">
+See all 30 tags&nbsp;&raquo;
+</a>
+</li>
+</ul>
+</section>
+<section>
+<nav id="menu_blogroll">
+<ul>
+</ul>
+</nav>
+</section>
+<section id="feed_link">
+<a href="https://tech-notes.maxmasnick.com/posts.atom">
+<span class="feed-icon"></span>
+</a>
+</section>
+</aside>
+</div>
+</div>
+<script async="async" src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script src="https://posthaven-assets.s3.amazonaws.com/assets/blog-9c4dc441edeec12de17695e1bf9de20a.js" type="text/javascript"></script>
+<script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-38525690-2']);
+          _gaq.push(['_setAllowLinker', true]);
+          _gaq.push(['_trackPageview']);
+        </script>
+<script>
+          _gaq.push(['b._setAccount', 'UA-25494587-1']);
+          _gaq.push(['b._trackPageview']);
+        </script>
+<script>
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                    '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+<script type="text/javascript">
+        (function() {
+          var desired_protocol = 'https:';
+          var incoming_protocol = window.location.protocol;
+          if(desired_protocol != incoming_protocol){
+            window.location.href = desired_protocol + window.location.href.substring(incoming_protocol.length);
+          }
+        })();
+      </script>
+
+<script src="https://gayal.maxmasnick.com/script.js" site="VVRKXBMS" defer></script>
+
+</body>
+</html>

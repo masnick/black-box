@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0">
+  <channel>
+    <title>Photos on Max Masnick, PhD</title>
+    <link>https://masnick.blog/categories/photos/</link>
+    <description></description>
+    
+    <language>en</language>
+    
+    <lastBuildDate>Tue, 31 Dec 2019 21:34:15 -0400</lastBuildDate>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/12/31/one-last-tracks.html</link>
+      <pubDate>Tue, 31 Dec 2019 21:34:15 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/12/31/one-last-tracks.html</guid>
+      <description>&lt;p&gt;One last &lt;a href=&#34;https://8tracks.com&#34;&gt;8tracks&lt;/a&gt; stream before the site shuts down tonight. It was an awesome service run by great people, and will be missed by many!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2020/37f4725f70.png&#34; alt=&#34;8tracks website&#34; border=&#34;0&#34; width=&#34;2424&#34; height=&#34;1362&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VS Code Is the Best Way to Work in Jupyter Notebooks</title>
+      <link>https://masnick.blog/2019/10/28/vs-code-is.html</link>
+      <pubDate>Mon, 28 Oct 2019 10:52:18 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/28/vs-code-is.html</guid>
+      <description>&lt;p&gt;Earlier this month, &lt;a href=&#34;https://devblogs.microsoft.com/python/announcing-support-for-native-editing-of-jupyter-notebooks-in-vs-code/&#34;&gt;Microsoft announced native support for Jupyter notebooks in VS Code&lt;/a&gt;. I just got the chance to try it out today, and it works great.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/f13b40e8ba.png&#34; alt=&#34;Jupyter vscode&#34; title=&#34;jupyter_vscode.png&#34; border=&#34;0&#34; width=&#34;2922&#34; height=&#34;2478&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why does this matter? Primarily because the web interface for Jupyter notebooks doesn&amp;rsquo;t have many of the features Python programmers who use &lt;a href=&#34;https://en.wikipedia.org/wiki/Integrated_development_environment&#34;&gt;IDEs&lt;/a&gt; are used to, such as autocomplete and interactive debugging. These features make programming in Python much faster and less error-prone.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve tried to use &lt;a href=&#34;https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html&#34;&gt;PyCharm&amp;rsquo;s Jupyter notebook support&lt;/a&gt; in the past, but it ran quite slow even on my very beefy computer. (This was at least a year ago, so it may no longer be true.)&lt;/p&gt;
+
+&lt;p&gt;In my testing, VS Code is lightning fast and the autocomplete support is great. Interactive debugging currently works via exporting the notebook as a Python script, and according to their blog post they are planning to add debugging features directly to Jupyter cells in the future.&lt;/p&gt;
+
+&lt;p&gt;For anyone who does serious work in Jupyter notebooks, I highly recommend checking out VS Code.&lt;/p&gt;
+
+&lt;p&gt;(PyCharm is also generally great, but is more complex and requires a license for Jupyter notebook support. The license is free for academics/research; paid otherwise.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/09/07/medium-is-such.html</link>
+      <pubDate>Sat, 07 Sep 2019 19:42:29 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/09/07/medium-is-such.html</guid>
+      <description>&lt;p&gt;Medium is such a dumpster fire. 2/3 of the screen on mobile is now filled with promotional junk for things no one actually wants.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/62d40798c6.jpg&#34; width=&#34;346&#34; height=&#34;600&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

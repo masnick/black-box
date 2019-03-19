@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0">
+  <channel>
+    <title>Max Masnick, PhD</title>
+    <link>https://masnick.blog/</link>
+    <description></description>
+    
+    <language>en</language>
+    
+    <lastBuildDate>Thu, 21 Mar 2019 10:30:07 -0400</lastBuildDate>
+	
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2020/04/12/ive-also-updated.html</link>
+      <pubDate>Sun, 12 Apr 2020 13:01:53 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2020/04/12/ive-also-updated.html</guid>
+      <description>&lt;p&gt;I’ve also updated my &lt;a href=&#34;https://maxmasnick.com/projects/reference-managers/&#34;&gt;reference management software guide&lt;/a&gt;. I’m now using Paperpile exclusively thanks to beta access to their iOS apps and Word plugin. Once these are publicly available, this will be by far the best option for reference management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2020/04/12/ive-written-an.html</link>
+      <pubDate>Sun, 12 Apr 2020 12:58:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2020/04/12/ive-written-an.html</guid>
+      <description>&lt;p&gt;I’ve written an updated &lt;a href=&#34;https://maxmasnick.com/kb/project-organization/&#34;&gt;guide for organizing data analysis projects&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replacing reCAPTCHA with hCaptcha</title>
+      <link>https://masnick.blog/2020/04/12/replacing-recaptcha-with.html</link>
+      <pubDate>Sun, 12 Apr 2020 12:54:29 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2020/04/12/replacing-recaptcha-with.html</guid>
+      <description>&lt;p&gt;Last summer I &lt;a href=&#34;https://masnick.blog/2019/07/01/the-state-of.html&#34;&gt;wrote about the lack of real alternatives to Google’s reCAPTCHA service&lt;/a&gt; for preventing bots from interacting with websites. I personally use a captcha on my &lt;a href=&#34;https://maxmasnick.com/contact&#34;&gt;contact form&lt;/a&gt; to reduce spam.&lt;/p&gt;
+
+&lt;p&gt;Recently I heard about &lt;a href=&#34;https://www.hcaptcha.com&#34;&gt;hCaptcha&lt;/a&gt; from &lt;a href=&#34;https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/&#34;&gt;Cloudflare’s post on switching from reCAPTCHA to hCAPTCHA&lt;/a&gt;. It appears hCaptcha is a more or less drop-in replacement for reCAPTCHA. I have personally been trying to move away from Google’s services as they &lt;a href=&#34;https://en.wikipedia.org/wiki/Criticism_of_Google#Privacy&#34;&gt;adopt more creepy data collection and sharing practices&lt;/a&gt;, but was stuck with reCAPTCHA until now.&lt;/p&gt;
+
+&lt;p&gt;I’ve moved my contact form to hCaptcha, which is powered by this &lt;a href=&#34;https://github.com/masnick/sinatra-contact-form&#34;&gt;simple Ruby application that can run for free on Heroku&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/12/31/one-last-tracks.html</link>
+      <pubDate>Tue, 31 Dec 2019 21:34:15 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/12/31/one-last-tracks.html</guid>
+      <description>&lt;p&gt;One last &lt;a href=&#34;https://8tracks.com&#34;&gt;8tracks&lt;/a&gt; stream before the site shuts down tonight. It was an awesome service run by great people, and will be missed by many!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2020/37f4725f70.png&#34; alt=&#34;8tracks website&#34; border=&#34;0&#34; width=&#34;2424&#34; height=&#34;1362&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/12/21/theres-a-new.html</link>
+      <pubDate>Sat, 21 Dec 2019 23:40:01 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/12/21/theres-a-new.html</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a new, very interesting collaboration tool called &lt;a href=&#34;https://www.coscreen.co/&#34;&gt;CoScreen&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;CoScreen™ turns your secondary display into your joint team desktop. Share windows via drag &amp;amp; drop, collaborate remotely via mouse &amp;amp; keyboard, each user gets their own mouse pointer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This, plus a video call, seems like it could be a pretty great way to work collaboratively with remote teammates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/12/09/i-just-discovered.html</link>
+      <pubDate>Mon, 09 Dec 2019 13:20:36 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/12/09/i-just-discovered.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://maxmasnick.com/kb/rlang/creating-data-frames/&#34;&gt;I just discovered the &lt;code&gt;tribble&lt;/code&gt; function&lt;/a&gt;, which makes it easy to quickly construct data frames (well, &lt;code&gt;tibbles&lt;/code&gt;) in R inline. It&amp;rsquo;s kind of like &lt;code&gt;datalines&lt;/code&gt; with a DATA Step in SAS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/28/i-just-discovered.html</link>
+      <pubDate>Thu, 28 Nov 2019 16:32:38 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/28/i-just-discovered.html</guid>
+      <description>&lt;p&gt;I just discovered the &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov&#34;&gt;new PubMed design&lt;/a&gt;&amp;hellip;looks like a nice improvement.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/28/a-very-interesting.html</link>
+      <pubDate>Thu, 28 Nov 2019 14:57:48 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/28/a-very-interesting.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://discourse.datamethods.org/t/how-to-get-new-statistical-methods-to-be-used-in-practice/2691&#34;&gt;A very interesting post on how to get a new statistical method to be used in peer-reviewed research.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Graphing calculators</title>
+      <link>https://masnick.blog/2019/11/26/graphing-calculators.html</link>
+      <pubDate>Tue, 26 Nov 2019 22:32:38 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/26/graphing-calculators.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://gen.medium.com/big-calculator-how-texas-instruments-monopolized-math-class-67ee165045dc&#34;&gt;This is an interesting article about the continued dominance of relatively expensive Texas Instruments graphing calculators in secondary education&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I still have (and periodically use) my TI-89. Even though my phone is vastly more capable, there’s something to be said for dedicated, optimized hardware keys for heavy use.&lt;/p&gt;
+
+&lt;p&gt;I relied on this calculator throughout high school, but when I got to college, calculators were simply not allowed for math tests. I thought I would hate this,  but in reality it worked fine. I’m not sure why high school math courses don’t ban calculators for tests considering how many problems the TI calculators cause.&lt;/p&gt;
+
+&lt;p&gt;The article linked above quotes the founder of &lt;a href=&#34;https://www.desmos.com&#34;&gt;Desmos&lt;/a&gt;, which provides a free web tool with an accompanying iOS application that provides a lot of the functionality of a TI graphing calculator but with better interactivity. It’s worth playing around with!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/18/quick-update-to.html</link>
+      <pubDate>Mon, 18 Nov 2019 10:43:32 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/18/quick-update-to.html</guid>
+      <description>&lt;p&gt;Quick update to my &lt;a href=&#34;https://www.maxmasnick.com/projects/reference-managers/&#34;&gt;reference managers roundup&lt;/a&gt; to add &lt;a href=&#34;http://citeas.org/&#34;&gt;CiteAs&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://citeas.org&#34;&gt;CiteAs&lt;/a&gt; is a simple tool for getting a properly-formatted citation for any DOI or &amp;ndash; more importantly &amp;ndash; open source software. &lt;a href=&#34;http://citeas.org/cite/https://cran.r-project.org/web/packages/stringr&#34;&gt;Here&amp;rsquo;s an example for the &lt;code&gt;stringr&lt;/code&gt; R package&lt;/a&gt;. The URLs for CiteAs are nicely formatted (&lt;code&gt;http://citeas.org/cite/https://cran.r-project.org/web/packages/stringr&lt;/code&gt; for the &lt;code&gt;stringr&lt;/code&gt; example), making it easy to create &lt;a href=&#34;https://gist.github.com/masnick/755d900fc68b97b1ea661c0dc76ddce2&#34;&gt;a &amp;ldquo;Cite this page&amp;rdquo; bookmarklet&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/08/a-nice-visualization.html</link>
+      <pubDate>Fri, 08 Nov 2019 11:46:14 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/08/a-nice-visualization.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.nytimes.com/interactive/2019/11/06/us/politics/elizabeth-warren-policies-taxes.html&#34;&gt;A nice visualization from the New York Times showing how Elizabeth Warren would pay for her proposals.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/08/this-is-a.html</link>
+      <pubDate>Fri, 08 Nov 2019 11:37:27 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/08/this-is-a.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://testing.googleblog.com/2019/11/code-health-respectful-reviews-useful.html&#34;&gt;This is a very helpful guide for writing useful&lt;/a&gt;, respectful comments when reviewing someone else&amp;rsquo;s code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/11/06/i-wrote-a.html</link>
+      <pubDate>Wed, 06 Nov 2019 07:20:22 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/06/i-wrote-a.html</guid>
+      <description>&lt;p&gt;If you’ve ever wanted to set up a cloud server for data analysis, but have been discouraged by the complexity, I wrote up &lt;a href=&#34;https://maxmasnick.com/kb/cloud-servers/&#34;&gt;a getting started guide&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Task management in the Apple ecosystem: OmniFocus vs. Things</title>
+      <link>https://masnick.blog/2019/11/02/task-management-in.html</link>
+      <pubDate>Sat, 02 Nov 2019 15:50:00 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/11/02/task-management-in.html</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve bounced back and forth between &lt;a href=&#34;https://www.omnigroup.com/omnifocus/&#34;&gt;OmniFocus&lt;/a&gt; and &lt;a href=&#34;https://culturedcode.com/things/&#34;&gt;Things&lt;/a&gt; several times now. They are very similar applications in many ways, but do have some significant differences.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/c82ff08440.jpg&#34; width=&#34;600&#34; height=&#34;450&#34; alt=&#34;Screenshot of Things on iPadOS&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what I like and dislike about each:&lt;/p&gt;
+
+&lt;h2 id=&#34;omnifocus&#34;&gt;OmniFocus&lt;/h2&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;End to end encryption.&lt;/li&gt;
+&lt;li&gt;Extremely flexible.&lt;/li&gt;
+&lt;li&gt;Web interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The visual design of the app isn&amp;rsquo;t to my taste. This seems silly, but I find myself less willing to use an app I don&amp;rsquo;t like the look of.&lt;/li&gt;
+&lt;li&gt;Keyboard shortcuts on the Mac are not intuitive to me.&lt;/li&gt;
+&lt;li&gt;Extra complexity of defer + due dates for every task is an annoyance. The Things model of &amp;ldquo;plan for later&amp;rdquo; dates, with optional deadlines and additional reminders, works better with the way I work.&lt;/li&gt;
+&lt;li&gt;The downside of having an extremely flexible application is that it is necessary more complex. I do find OmniFocus&amp;rsquo;s flexibility helpful, but I&amp;rsquo;m left with just a bit more unhelpful (for me) complexity than I&amp;rsquo;d like.&lt;/li&gt;
+&lt;li&gt;Uses the clunky, default iOS date picker with no option for natural language parsing of dates/times.&lt;/li&gt;
+&lt;li&gt;The natural language date parsing on the Mac is a bit finicky. For example, &lt;code&gt;sep 1&lt;/code&gt; works but &lt;code&gt;sept 1&lt;/code&gt; does not for &amp;ldquo;September 1&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Adding a new task on the watch with &amp;ldquo;hey Siri&amp;rdquo; requires tapping the watch after you finish dictating.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;things&#34;&gt;Things&lt;/h2&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One of the best-looking apps of all time (not hyperbole, it&amp;rsquo;s really good).&lt;/li&gt;
+&lt;li&gt;User interface design and user experience is extremely well-conceived and we&amp;rsquo;ll-executed.&lt;/li&gt;
+&lt;li&gt;iPad keyboard support (arguably the best of any app of any category &amp;ndash; again, not hyperbole).&lt;/li&gt;
+&lt;li&gt;Excellent natural language parsing for dates on the Mac, and a great custom date picker on iOS.&lt;/li&gt;
+&lt;li&gt;Headings inside projects.&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;today&amp;rdquo; and &amp;ldquo;this evening&amp;rdquo; lists map onto how my brain works.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Can&amp;rsquo;t check off a repeating task before its due date (they are working on fixing this but it requires a revamp of their underlying data models so I don&amp;rsquo;t expect this to change anytime soon).&lt;/li&gt;
+&lt;li&gt;No ability to attach files to tasks.&lt;/li&gt;
+&lt;li&gt;No ability to use rich text in task notes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;both-are-good-at&#34;&gt;Both are good at&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reliable, fast sync.&lt;/li&gt;
+&lt;li&gt;Very few, if any, crashes or bugs.&lt;/li&gt;
+&lt;li&gt;Made by reputable indie developers who have been around for a long time.&lt;/li&gt;
+&lt;li&gt;Quick task entry pop-up on the Mac, and draggable new task button on iOS (allows you to drop a new task exactly where you want it).&lt;/li&gt;
+&lt;li&gt;Integration with the system share sheet on iOS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;both-are-missing&#34;&gt;Both are missing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Any notion of shared task lists.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VS Code Is the Best Way to Work in Jupyter Notebooks</title>
+      <link>https://masnick.blog/2019/10/28/vs-code-is.html</link>
+      <pubDate>Mon, 28 Oct 2019 10:52:18 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/28/vs-code-is.html</guid>
+      <description>&lt;p&gt;Earlier this month, &lt;a href=&#34;https://devblogs.microsoft.com/python/announcing-support-for-native-editing-of-jupyter-notebooks-in-vs-code/&#34;&gt;Microsoft announced native support for Jupyter notebooks in VS Code&lt;/a&gt;. I just got the chance to try it out today, and it works great.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/f13b40e8ba.png&#34; alt=&#34;Jupyter vscode&#34; title=&#34;jupyter_vscode.png&#34; border=&#34;0&#34; width=&#34;2922&#34; height=&#34;2478&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why does this matter? Primarily because the web interface for Jupyter notebooks doesn&amp;rsquo;t have many of the features Python programmers who use &lt;a href=&#34;https://en.wikipedia.org/wiki/Integrated_development_environment&#34;&gt;IDEs&lt;/a&gt; are used to, such as autocomplete and interactive debugging. These features make programming in Python much faster and less error-prone.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve tried to use &lt;a href=&#34;https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html&#34;&gt;PyCharm&amp;rsquo;s Jupyter notebook support&lt;/a&gt; in the past, but it ran quite slow even on my very beefy computer. (This was at least a year ago, so it may no longer be true.)&lt;/p&gt;
+
+&lt;p&gt;In my testing, VS Code is lightning fast and the autocomplete support is great. Interactive debugging currently works via exporting the notebook as a Python script, and according to their blog post they are planning to add debugging features directly to Jupyter cells in the future.&lt;/p&gt;
+
+&lt;p&gt;For anyone who does serious work in Jupyter notebooks, I highly recommend checking out VS Code.&lt;/p&gt;
+
+&lt;p&gt;(PyCharm is also generally great, but is more complex and requires a license for Jupyter notebook support. The license is free for academics/research; paid otherwise.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting paper on racial bias in a commercial healthcare risk prediction algorithm</title>
+      <link>https://masnick.blog/2019/10/27/interesting-paper-on.html</link>
+      <pubDate>Sun, 27 Oct 2019 14:24:44 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/27/interesting-paper-on.html</guid>
+      <description>&lt;p&gt;There’s an interesting paper in &lt;a href=&#34;https://science.sciencemag.org/content/366/6464/447.full&#34;&gt;&lt;em&gt;Science&lt;/em&gt; by Ziad Obermeyer and colleagues on racial bias in healthcare risk prediction algorithms&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The bias arises because the algorithm predicts health care costs rather than illness, but unequal access to care means that we spend less money caring for Black patients than for White patients. Thus, despite health care cost appearing to be an effective proxy for health by some measures of predictive accuracy, large racial biases arise. We suggest that the choice of convenient, seemingly effective proxies for ground truth can be an important source of algorithmic bias in many contexts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The effect of this bias is that healthier White patients were referred for extra services in place of less-healthy Black patients (who presumably needed the extra services more).&lt;/p&gt;
+
+&lt;p&gt;This is a good reminder for anyone working on healthcare models to always stratify to see if the model behaves differently for traditionally marginalized groups. Not fixing these issues has serious real-world consequences on people’s health!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/10/12/a-tweet-from.html</link>
+      <pubDate>Sat, 12 Oct 2019 08:54:33 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/10/12/a-tweet-from.html</guid>
+      <description>&lt;p&gt;A tweet from &lt;a href=&#34;https://twitter.com/JAMA_current/status/1182445844869480448&#34;&gt;JAMA&lt;/a&gt; earlier this week:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This issue JAMA publishes a &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2019.12976?guestAccessKey=8b43141a-13f0-40e7-830d-1453cd18537b&#34;&gt;Retraction and Replacement notice&lt;/a&gt; for an RCT of transitional care for #COPD. Following discovery of an error in the original analysis, the reanalysis now shows the study’s observed effect changing from strong benefit to harm&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a striking reminder of the consequences of errors in analysis.&lt;/p&gt;
+
+&lt;p&gt;Following best practices, like version control and peer review of analysis code, can help catch errors before publication.&lt;/p&gt;
+
+&lt;p&gt;But code will never be 100% bug free. Best practices also help identify the source and consequence of bugs – if you end up having to issue a correction or retract a paper, you&amp;rsquo;ll be able to reproduce the bad analysis along with a corrected one to conclusively show the cause and effect of the issue.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/09/27/the-windows-terminal.html</link>
+      <pubDate>Fri, 27 Sep 2019 22:59:31 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/09/27/the-windows-terminal.html</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://devblogs.microsoft.com/commandline/windows-terminal-preview-1909/&#34;&gt;Windows Terminal preview&lt;/a&gt; looks neat!&lt;/p&gt;
+
+&lt;p&gt;One of the things I love about macOS is the included Terminal application is great. Windows hasn’t been nearly as advanced here historically, but this new application appears to be a huge improvement.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/09/07/medium-is-such.html</link>
+      <pubDate>Sat, 07 Sep 2019 19:42:29 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/09/07/medium-is-such.html</guid>
+      <description>&lt;p&gt;Medium is such a dumpster fire. 2/3 of the screen on mobile is now filled with promotional junk for things no one actually wants.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://masnick.blog/uploads/2019/62d40798c6.jpg&#34; width=&#34;346&#34; height=&#34;600&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Handling baseline imbalances among arms in clinical trials</title>
+      <link>https://masnick.blog/2019/09/07/handling-baseline-imbalances.html</link>
+      <pubDate>Sat, 07 Sep 2019 11:08:48 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/09/07/handling-baseline-imbalances.html</guid>
+      <description>&lt;p&gt;It’s been a while since &lt;a href=&#34;https://www.maxmasnick.com/2014/04/01/regression-coefficients/&#34;&gt;I went down an epidemiology rabbit hole&lt;/a&gt;, but I just ran across &lt;a href=&#34;https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547&#34;&gt;this great discussion on the datamethods forum&lt;/a&gt; about chance imbalances in baseline characteristics among study arms in randomized trials, and the &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844943/table/tbl4/?report=objectonly&#34;&gt;typical &amp;ldquo;Table 1&amp;rdquo;&lt;/a&gt; that reports summary statistics for each baseline characteristic stratified by study arm. This gets at something that has bugged me since I took a clinical trials class in grad school.&lt;/p&gt;
+
+&lt;p&gt;First of all, if you haven’t already closed this tab, you should read &lt;a href=&#34;https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547/3&#34;&gt;Frank Harrell post arguing for the elimination of the traditional &amp;ldquo;Table 1&amp;rdquo; from reporting clinical trial results&lt;/a&gt;. His alternative is really interesting, and he makes a compelling case.&lt;/p&gt;
+
+&lt;p&gt;But if you don&amp;rsquo;t have a traditional Table 1, how does a reader know that a chance imbalance of a critical baseline variable didn&amp;rsquo;t influence the results of the trial? Randomization of patients into study arms only guarantees balance of baseline characteristics on average if you randomize many times — but most clinical trials are just conducted once. If that one randomization happens to, for example, put all women in Group A and all men in Group B (unlikely but theoretically possible), it&amp;rsquo;s important to know this and account for it. This is something that&amp;rsquo;s always bothered me about clinical trials that rely on unadjusted comparisons among arms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547/11&#34;&gt;Frank&amp;rsquo;s suggestion&lt;/a&gt; is to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Pre-specify the most important prognostic factors&amp;rdquo; and adjust for them come hell or high water.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This seems like a clean solution, and it forces investigators to identify key baseline characteristics &lt;em&gt;a priori&lt;/em&gt;, which is a good idea regardless of the analytical approach.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844943/&#34;&gt;CONSORT guidelines for clinical trials&lt;/a&gt; recommend reporting both unadjusted and adjusted analyses. But I’ve never understood what value the unadjusted analysis adds over the adjusted one (assuming the adjustment is for pre-specified baseline characteristics). If the baseline characteristics are balanaced among arms, then the adjusted analysis will show no effect for these covariates — in other words it will look essentially the same as the unadjusted analysis. If they are not balanced, then you &lt;em&gt;want&lt;/em&gt; to adjust for them — and the unadjusted analysis isn’t meaningful.&lt;/p&gt;
+
+&lt;p&gt;I’m not a clinical trials analysis expert by any means, so I’m willing to be convinced that I’m wrong here. If there’s a compelling argument for reporting unadjusted analysis instead of (or along with) a pre-specified adjusted analysis, I’m all ears!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://masnick.blog/2019/08/29/basecamp-has-refreshed.html</link>
+      <pubDate>Thu, 29 Aug 2019 09:21:39 -0400</pubDate>
+      
+      <guid>http://max.micro.blog/2019/08/29/basecamp-has-refreshed.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://basecamp.com/&#34;&gt;Basecamp&lt;/a&gt; has refreshed their branding, and has added a new free plan for personal use!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

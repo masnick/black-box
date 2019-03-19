@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Max Masnick" name="author">
+
+  <title>Max Masnick, PhD
+		- Handling baseline imbalances among arms in clinical trials</title>
+
+  <link href="../../../assets/css/style.css%3F0.css" rel="stylesheet">
+  <link href="../../../assets/css/highlight.css%3F0.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../custom.css%3F0.css">
+
+	<link rel="shortcut icon" href="https://micro.blog/max/favicon.png" type="image/x-icon" />
+
+    <link rel="me" href="https://micro.blog/max" />
+	
+	
+	
+	<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
+	<link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
+	<link rel="micropub" href="https://micro.blog/micropub" />
+	<link rel="microsub" href="https://micro.blog/microsub" />
+	<link rel="webmention" href="https://micro.blog/webmention" />
+	<link rel="subscribe" href="https://micro.blog/users/follow" />
+    
+    
+</head>
+
+<body>
+  <nav class="main-nav">
+  
+  <a class="normal" href="../../../index.html"> <span class="arrow">←</span> Home</a>
+  
+
+	
+		
+			<a href="../../../archive/index.html">Archive</a>
+		
+	
+		
+			<a href="../../../about/index.html">About</a>
+		
+	
+		
+			<a href="../../../subscribe/index.html">Subscribe</a>
+		
+	
+		
+			<a href="../../../redirect/index.html">maxmasnick.com →</a>
+		
+	
+
+  <a class="cta" href="https://micro.blog/max" rel="me">Also on Micro.blog</a>
+</nav>
+
+
+
+  <section id="wrapper" >
+	
+<article class="h-entry post">
+  <header>
+	
+    <h1 class="p-name">Handling baseline imbalances among arms in clinical trials</h1>
+    
+    <h2 class="headline">
+      <time class="dt-published" datetime="2019-09-07 11:08:48 -0400">
+        <a class="u-url dates" href="handling-baseline-imbalances.html">Sep 7, 2019</a>
+      </time>
+    </h2>
+  </header>
+  <section class="e-content post-body">
+      <p>It’s been a while since <a href="https://www.maxmasnick.com/2014/04/01/regression-coefficients/">I went down an epidemiology rabbit hole</a>, but I just ran across <a href="https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547">this great discussion on the datamethods forum</a> about chance imbalances in baseline characteristics among study arms in randomized trials, and the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844943/table/tbl4/?report=objectonly">typical &ldquo;Table 1&rdquo;</a> that reports summary statistics for each baseline characteristic stratified by study arm. This gets at something that has bugged me since I took a clinical trials class in grad school.</p>
+
+<p>First of all, if you haven’t already closed this tab, you should read <a href="https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547/3">Frank Harrell post arguing for the elimination of the traditional &ldquo;Table 1&rdquo; from reporting clinical trial results</a>. His alternative is really interesting, and he makes a compelling case.</p>
+
+<p>But if you don&rsquo;t have a traditional Table 1, how does a reader know that a chance imbalance of a critical baseline variable didn&rsquo;t influence the results of the trial? Randomization of patients into study arms only guarantees balance of baseline characteristics on average if you randomize many times — but most clinical trials are just conducted once. If that one randomization happens to, for example, put all women in Group A and all men in Group B (unlikely but theoretically possible), it&rsquo;s important to know this and account for it. This is something that&rsquo;s always bothered me about clinical trials that rely on unadjusted comparisons among arms.</p>
+
+<p><a href="https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547/11">Frank&rsquo;s suggestion</a> is to:</p>
+
+<blockquote>
+<p>&ldquo;Pre-specify the most important prognostic factors&rdquo; and adjust for them come hell or high water.</p>
+</blockquote>
+
+<p>This seems like a clean solution, and it forces investigators to identify key baseline characteristics <em>a priori</em>, which is a good idea regardless of the analytical approach.</p>
+
+<p>The <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844943/">CONSORT guidelines for clinical trials</a> recommend reporting both unadjusted and adjusted analyses. But I’ve never understood what value the unadjusted analysis adds over the adjusted one (assuming the adjustment is for pre-specified baseline characteristics). If the baseline characteristics are balanaced among arms, then the adjusted analysis will show no effect for these covariates — in other words it will look essentially the same as the unadjusted analysis. If they are not balanced, then you <em>want</em> to adjust for them — and the unadjusted analysis isn’t meaningful.</p>
+
+<p>I’m not a clinical trials analysis expert by any means, so I’m willing to be convinced that I’m wrong here. If there’s a compelling argument for reporting unadjusted analysis instead of (or along with) a pre-specified adjusted analysis, I’m all ears!</p>
+
+  </section>
+
+  
+
+  <section id="post-meta" class="clearfix p-author h-card">
+    <a href="../../../index.html" class="u-url">
+  	
+		<img class="u-photo avatar" src="https://micro.blog/max/avatar.jpg" width="96" height="96">
+		<div>
+		  <span class="p-name dark">Max Masnick</span>
+		  <span><a href="https://micro.blog/max">@max</a></span>
+		</div>
+	
+    </a>
+  </section>
+</article>
+
+  </section>
+  <footer id="footer">
+
+<section id="wrapper">
+  <ul>
+    <li><a href="../../../feed.xml">RSS</a></li>
+    <li><a href="../../../feed.json">JSON Feed</a></li>
+    <li><a href="https://micro.blog/max" rel="me">Micro.blog</a></li>
+
+  </ul>
+  <form method="get" id="search" action="https://duckduckgo.com/">
+    <input type="hidden" name="sites" value="https://masnick.blog/"/>
+    <input type="hidden" name="k8" value="#444444"/>
+    <input type="hidden" name="k9" value="#ee4792"/>
+    <input type="hidden" name="kt" value="h"/>
+    <input class="field" type="text" name="q" maxlength="255" placeholder="To search, type and hit Enter&hellip;"/>
+    <input type="submit" value="Search" style="display: none;" />
+  </form>
+</section>
+
+</footer>
+
+  <p style="text-align: center;"><small style="color: #ccc; font-size: 13.5px;">© <a href="https://maxmasnick.com" style="color: #ccc !important;">Max Masnick</a>. Views expressed here are mine alone.</small></p>
+
+
+
+<script src="https://gayal.maxmasnick.com/script.js" site="UBZHDIVA" defer></script>
+
+		
+</body>
+</html>

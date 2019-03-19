@@ -1,0 +1,139 @@
+/* basic overrides */
+body {
+  border-top: 5px solid #880000;
+    color: #333;
+      font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif !important;
+}
+a, a:visited {
+    text-decoration: underline;
+    transition: none !important;
+    box-shadow: none !important;
+    font-weight: 400 !important;
+}
+a {
+    color: blue !important;
+}
+a:visited {
+    color: purple !important;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code {
+ 	padding-left: 0.25rem;
+padding-right: 0.25rem;
+  background-color: #eee;
+  border-radius: .25rem;
+  font-family: "Source Code Pro", Consolas, Menlo, "Courier New", monospace;
+  box-sizing: border-box;
+  font-size: .875rem;
+}
+
+
+
+/* post list header */
+/*.profile h4:before {
+    content: "by Max Masnick, PhD";
+    display: block;
+    color: #333;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}*/
+.profile h4 {
+    color: #aaa;
+    font-size: 0.75rem;
+    padding-top: 2rem;
+}
+.profile h4 a, .profile h4 a:visited {
+    color: #aaa !important;
+}
+
+
+
+
+
+/* post list */
+#post-list h2 a, #post-list h2 a:visited {
+    text-decoration: none;
+    color: #333 !important;
+    font-weight: 600 !important;
+}   
+#post-list li a.u-url { /* posts list dates */
+    text-decoration: none;
+}
+#post-list li a.u-url time {
+    text-transform: none;
+    font-weight: 400;
+}
+
+
+
+
+/* post body */
+section#wrapper {
+    max-width: 700px;
+}
+
+section.post-body li {
+    list-style-position: unset;
+    margin-left: 2rem;
+}
+section.post-body ul li {
+    list-style-type: disc !important;
+}
+section.post-body ol li {
+    list-style-type: decimal !important;
+}
+
+
+
+/* Nav bar styling */
+.main-nav a, .main-nav a:visited, footer a, footer a:visited {
+    color: #880000 !important;
+}
+.main-nav .cta {
+    display: none; /* hide "also on micro.blog" */
+}
+
+
+/* Date styling */
+time a.dates { /* top of individual post */
+    color: #888 !important;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Footer styling */
+#post-meta {
+    font-size: 1rem;
+}
+#post-meta img.u-photo.avatar {
+    width: 50px;
+    height: 50px;
+}
+#post-meta .p-author.h-card.dark {
+    font-weight: 700;
+}
+#post-meta a, #post-meta a:visited {
+    color: #333 !important;
+    text-decoration: none;
+}
+#post-meta > div > a:nth-child(2):before {
+    content: "by ";
+    font-style: italic;
+    color: #888;
+}
+
+/* cache bust 2018-08-01 */

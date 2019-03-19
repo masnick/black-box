@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Max Masnick, PhD</title>
+    <link>https://masnick.blog/</link>
+    <description>I'm an epidemiologist and data scientist currently living outside Providence, RI.</description>
+	<itunes:image href="https://micro.blog/max/podcast.png" />
+	<itunes:category text="Society &amp; Culture">
+		<itunes:category text="Personal Journals"></itunes:category>
+	</itunes:category>
+	<itunes:author>Max Masnick</itunes:author>
+	<itunes:explicit>no</itunes:explicit>		
+	<itunes:owner>
+		<itunes:name>Max Masnick</itunes:name>
+		<itunes:email></itunes:email>
+	</itunes:owner>
+    
+    <language>en</language>
+    
+    <lastBuildDate>Thu, 21 Mar 2019 10:30:07 -0400</lastBuildDate>
+  </channel>
+</rss>
